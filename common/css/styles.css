@@ -174,12 +174,12 @@ aside #aside-statistics {
 }
 
 #grid-table td.start-node {
-  background: #196F3DFF;
+  background: green;
   color: #FFFFFFFF;
 }
 
 #grid-table td.end-node {
-  background: #A82A1BFF;
+  background: red;
   color: #FFFFFFFF;
 }
 
@@ -253,7 +253,7 @@ aside #aside-statistics {
 }
 
 .button#clear {
-  color: #A82A1BFF;
+  color: red;
   background: #FFFFFFFF;
 }
 

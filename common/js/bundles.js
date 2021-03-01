@@ -13,7 +13,6 @@ export { manhattanDist, getRand, getRandRange, getTimeStampCallback } from './He
 export { Heap } from './Helpers/heap.js'
 
 export { radial } from './Mazes/radial.js'
-export { test } from './Mazes/test.js'
 export { lines } from './Mazes/lines.js'
 export { random } from './Mazes/random.js'
 export { recursive } from './Mazes/recursive-division.js'

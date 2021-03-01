@@ -1,10 +1,10 @@
-import { actions, clearGrid, random, recursive, test, radial, lines, setRandomStartEndNodes } from '../bundles.js'
+import { actions, clearGrid, random, recursive, radial, lines, setRandomStartEndNodes } from '../bundles.js'
 
 /**
  * Generates maze depending on selected mode
  */
 export const maze = {
-    mode : "random",
+    mode : "recursive",
     grid : undefined,
     isGenerating : false
 };
@@ -32,10 +32,6 @@ maze.generateMaze = function(grid) {
 // Radial
 maze.radial = function(grid) {
     radial(grid);
-}
-// Test
-maze.test = function(grid) {
-    test(grid);
 }
 // Random
 maze.random = function(grid) {
