@@ -1,0 +1,412 @@
+/* Main Color Theme */
+/* Colors */
+/* Sizes */
+/* Fonts & Text */
+h3 {
+  font-weight: 500;
+}
+
+/*
+TODO:
+  Choose color theme
+  Accordian:
+    https://codepen.io/raubaca/details/PZzpVe
+    Show algorithm details
+  Delete Button:
+    https://codepen.io/chrisdothtml/pen/xbmddV
+  Title font:
+    https://codepen.io/ClaireLarsen/pen/XmVyVX
+*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Main Wrapper */
+body {
+  background: #EEF4EDFF;
+  height: 100vh;
+  overflow: hidden;
+  font: normal normal normal 1em "Roboto", sans-serif;
+}
+
+body .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .wrapper .content {
+  display: -ms-grid !important;
+  display: grid !important;
+  -ms-grid-columns: 1fr 10.5em;
+      grid-template-columns: 1fr 10.5em;
+  gap: 1.5em;
+}
+
+body .wrapper .content header {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  margin-top: 0.25em;
+  color: #0B2545FF;
+  text-align: center;
+  font: normal small-caps normal 3.5em "Montserrat", sans-serif;
+}
+
+body .wrapper .content main {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+body .wrapper .content aside {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+/* Borders */
+.border-wrap {
+  padding: 0.25em;
+  position: relative;
+  border-collapse: collapse;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000FF), to(#13315CFF));
+  background: linear-gradient(180deg, #000000FF, #13315CFF);
+  -webkit-box-shadow: 0.2em 0.2em 0.1em #AFAFAFFF;
+          box-shadow: 0.2em 0.2em 0.1em #AFAFAFFF;
+}
+
+.border-wrap .border-content {
+  padding: 0.2em;
+  background: #0B2545FF;
+  text-align: center;
+  color: #FFFFFFFF;
+}
+
+.border-wrap .border-content > * {
+  width: 100%;
+  margin: 0;
+}
+
+/* Side Panel */
+aside {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+aside #aside-controls {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+aside #aside-statistics {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+/* Controls */
+#aside-controls h3 {
+  margin-bottom: 0.25em;
+}
+
+#aside-controls h3:not(:first-child) {
+  margin-top: 0.5em;
+}
+
+#aside-controls #clear {
+  margin-top: 1em;
+}
+
+/* Statistics */
+#aside-statistics h3 {
+  margin-bottom: 0.25em;
+}
+
+#aside-statistics tr {
+  font-size: 1em;
+}
+
+#aside-statistics tr#row-visited {
+  color: #EC57FA;
+}
+
+#aside-statistics tr#row-path {
+  color: #50D48F;
+}
+
+#aside-statistics tr td:nth-child(1) {
+  text-align: left;
+  font-weight: 500;
+  width: 70%;
+}
+
+#aside-statistics tr td:nth-child(2) {
+  text-align: right;
+  font-weight: 600;
+  width: 30%;
+}
+
+/* Grid Table */
+#grid-table {
+  border-collapse: collapse;
+  /* Nodes */
+}
+
+#grid-table td {
+  background: #FFFFFFFF;
+  border: 1px solid #0B2545FF;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+#grid-table td.start-node {
+  background: #196F3DFF;
+  color: #FFFFFFFF;
+}
+
+#grid-table td.end-node {
+  background: #A82A1BFF;
+  color: #FFFFFFFF;
+}
+
+#grid-table td.moving {
+  background: #13315CFF;
+  color: #EEF4EDFF;
+}
+
+#grid-table td.blocked {
+  background: #001a32;
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+  -webkit-animation-name: blockedAnimation;
+          animation-name: blockedAnimation;
+}
+
+#grid-table td.visited {
+  background: #EC57FA;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: visitedAnimation;
+          animation-name: visitedAnimation;
+}
+
+#grid-table td.path {
+  background: #50D48F;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: pathAnimation;
+          animation-name: pathAnimation;
+}
+
+#grid-table:hover {
+  cursor: pointer;
+}
+
+/* Table Icons */
+.fa-dot-circle,
+.fa-arrow-right {
+  display: table-cell !important;
+}
+
+.fa-dot-circle:before,
+.fa-arrow-right:before {
+  font-size: 1.25em;
+  line-height: 1.2;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding: 0.5em 0.25em;
+  margin: 0 0 0.3em 0;
+  border-radius: 0.15em;
+  color: #13315CFF;
+  background: #FFFFFFFF;
+  border: 0.1em solid #0B2545FF;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.button:hover, .button.pseudo-hover {
+  cursor: pointer;
+  color: #EEF4EDFF;
+  background: #8DA9C4FF;
+  border: 0.1em solid #0B2545FF;
+}
+
+.button#clear {
+  color: #A82A1BFF;
+  background: #FFFFFFFF;
+}
+
+.button#clear:hover, .button#clear.pseudo-hover {
+  color: #EEF4EDFF;
+  background: #8DA9C4FF;
+}
+
+/* Animations */
+@-webkit-keyframes blockedAnimation {
+  0% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    background: #283747;
+  }
+  50% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+    background: #1f3042;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: #15283c;
+  }
+}
+@keyframes blockedAnimation {
+  0% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    background: #283747;
+  }
+  50% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+    background: #1f3042;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: #15283c;
+  }
+}
+
+@-webkit-keyframes visitedAnimation {
+  0% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    background: #FA8057;
+  }
+  25% {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+    background: #D95A4C;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: #F05F74;
+  }
+  75% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    background: #D94CA8;
+  }
+  100% {
+    -webkit-transform: scale(1.35);
+            transform: scale(1.35);
+    background: #EC57FA;
+  }
+}
+
+@keyframes visitedAnimation {
+  0% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    background: #FA8057;
+  }
+  25% {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+    background: #D95A4C;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: #F05F74;
+  }
+  75% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    background: #D94CA8;
+  }
+  100% {
+    -webkit-transform: scale(1.35);
+            transform: scale(1.35);
+    background: #EC57FA;
+  }
+}
+
+@-webkit-keyframes pathAnimation {
+  0% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    background: #5CABFF;
+  }
+  25% {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+    background: #29B1E3;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: #39F7FA;
+  }
+  75% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    background: #29E3B4;
+  }
+  100% {
+    -webkit-transform: scale(1.35);
+            transform: scale(1.35);
+    background: #50D48F;
+  }
+}
+
+@keyframes pathAnimation {
+  0% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    background: #5CABFF;
+  }
+  25% {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+    background: #29B1E3;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background: #39F7FA;
+  }
+  75% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    background: #29E3B4;
+  }
+  100% {
+    -webkit-transform: scale(1.35);
+            transform: scale(1.35);
+    background: #50D48F;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

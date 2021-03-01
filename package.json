@@ -1,0 +1,25 @@
+{
+  "name": "pathfinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "lite-server",
+    "build": "webpack --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sukhjot-sekhon/Pathfinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sukhjot-sekhon/Pathfinder/issues"
+  },
+  "homepage": "https://github.com/sukhjot-sekhon/Pathfinder#readme"
+}

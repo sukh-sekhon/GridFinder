@@ -1,0 +1,344 @@
+/* Main Color Theme */
+$mint-cream:    #EEF4EDFF;
+$cadet-grey:    #8DA9C4FF;
+$indigo-dye:    #134074FF;
+$prussian-blue: #13315CFF;
+$oxford-blue:   #0B2545FF;
+
+$red:           #A82A1BFF;
+$green:         #196F3DFF;
+$white:         #FFFFFFFF;
+$black:         #000000FF;
+$gray:          #AFAFAFFF;
+
+/* Colors */
+// Text
+$text-dark:                     $prussian-blue;
+$text-light-1:                  $white;
+$text-light-2:                  $mint-cream;
+$header:                        $oxford-blue;
+
+// Background, Border, Shadow
+$background:                    $mint-cream;
+$border-content:                $oxford-blue;
+$box-shadow:                    $gray;
+$border-start:                  $black;
+$border-end:                    $prussian-blue;
+
+// Buttons
+$button-text:                   $text-dark;
+$button-background:             $white;
+$button-border:                 $oxford-blue;
+
+$button-text-hover:             $mint-cream;
+$button-background-hover:       $cadet-grey;
+$button-border-hover:           $oxford-blue;
+
+$clear-button-text:             $red;
+$clear-button-background:       $white;
+$clear-button-text-hover:       $mint-cream;
+$clear-button-background-hover: $cadet-grey;
+
+// Table
+$grid-lines:                    $oxford-blue;
+$grid-background:               $white;
+
+// Nodes: Start/End/Moving
+$start-node-background:         $green;
+$start-node-icon:               $white;
+$end-node-background:           $red;
+$end-node-icon:                 $white;
+$moving-node-background:        $text-dark;
+$moving-node-icon:              $text-light-2;
+
+// Nodes: Blocked/Visited/Path
+$blocked-series-1: #283747;
+$blocked-series-2: #1f3042;
+$blocked-series-3: #15283c;
+$blocked-series-4: #0a2137;
+$blocked-series-5: #001a32;
+$blocked:          $blocked-series-5;
+
+$visited-series-1: #FA8057;
+$visited-series-2: #D95A4C;
+$visited-series-3: #F05F74;
+$visited-series-4: #D94CA8;
+$visited-series-5: #EC57FA;
+$visited:          $visited-series-5;
+
+$path-series-1: #5CABFF;
+$path-series-2: #29B1E3;
+$path-series-3: #39F7FA;
+$path-series-4: #29E3B4;
+$path-series-5: #50D48F;
+$path:            $path-series-5;
+
+/* Sizes */
+$aside-width: 10.5em;
+
+/* Fonts & Text */
+$font-stack-body: normal normal normal 1em 'Roboto', sans-serif;
+$font-stack-header: normal small-caps normal 3.5em 'Montserrat', sans-serif;
+h3 {
+  font-weight: 500;
+}
+
+/*
+TODO:
+  Choose color theme
+  Accordian:
+    https://codepen.io/raubaca/details/PZzpVe
+    Show algorithm details
+  Delete Button:
+    https://codepen.io/chrisdothtml/pen/xbmddV
+  Title font:
+    https://codepen.io/ClaireLarsen/pen/XmVyVX
+*/
+
+* {
+  box-sizing: border-box; 
+}
+
+/* Main Wrapper */
+body {
+  background: $background;
+  height: 100vh;
+  overflow: hidden;
+  font: $font-stack-body;
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+
+    .content {
+      display: grid !important;
+      grid-template-columns: 1fr $aside-width;
+      gap: 1.5em;
+    
+      header {
+        grid-row: 1;
+        grid-column: 1 / 2;
+        margin-top: 0.25em;
+        color: $header;
+        text-align: center;
+        font: $font-stack-header
+      }
+      
+      main {
+        grid-row: 2;
+        grid-column: 1;
+      }
+      
+      aside {
+        grid-row: 2;
+        grid-column: 2;
+      }
+    }
+  }
+}
+
+
+/* Borders */
+.border-wrap {
+  padding: (1em / 4);
+  position: relative;
+  border-collapse: collapse;
+  background: linear-gradient(180deg, $border-start, $border-end);
+  box-shadow: 0.2em 0.2em 0.1em $box-shadow;
+
+  .border-content {
+    padding: 0.2em;
+    background: $border-content;
+    text-align: center;
+    color: $text-light-1;
+
+    > * {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
+
+
+/* Side Panel */
+aside {
+  display: grid;
+  justify-content: left;
+
+  #aside-controls {
+    align-self: flex-start;
+  }
+  #aside-statistics {
+    align-self: flex-end;
+  }
+}
+
+
+/* Controls */
+#aside-controls {
+  & h3 {
+    margin-bottom: 0.25em;
+  }
+  & h3:not(:first-child) {
+    margin-top: 0.5em;
+  }
+  & #clear {
+    margin-top: 1em;
+  }
+}
+
+
+/* Statistics */
+#aside-statistics {
+  h3 {
+    margin-bottom: 0.25em;
+  }
+  tr {
+    font-size: 1em;
+
+    &#row-visited {
+      color: $visited;
+    }
+    &#row-path {
+      color: $path;
+    }
+
+    td:nth-child(1) {
+      text-align: left;
+      font-weight: 500;
+      width: 70%;
+    }
+    td:nth-child(2) {
+      text-align: right;
+      font-weight: 600;
+      width: 30%;
+    }
+  }
+}
+
+
+/* Grid Table */
+#grid-table {
+  border-collapse: collapse;
+
+  /* Nodes */
+  td {
+    background: $grid-background;
+    border: 1px solid $grid-lines;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+      
+    &.start-node {
+      background: $start-node-background;
+      color: $start-node-icon;
+    }
+
+    &.end-node {
+      background: $end-node-background;
+      color: $end-node-icon;
+    }
+
+    &.moving {
+      background: $moving-node-background;
+      color: $moving-node-icon;
+    }
+
+    &.blocked {
+      background: $blocked;
+      animation-duration: 0.25s;
+      animation-name: blockedAnimation;
+    }
+    
+    &.visited {
+      background: $visited;
+      animation-duration: 1s;
+      animation-name: visitedAnimation;
+    }
+    
+    &.path {
+      background: $path;
+      animation-duration: 1s;
+      animation-name: pathAnimation;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+/* Table Icons */
+.fa-dot-circle,
+.fa-arrow-right {
+  // border: none;
+  display: table-cell !important;
+}
+.fa-dot-circle:before,
+.fa-arrow-right:before {
+  font-size: 1.25em;
+  line-height: 1.2;
+}
+
+
+/* Buttons */
+.button {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding: 0.5em 0.25em;
+  margin: 0 0 0.3em 0;
+  border-radius: 0.15em;
+  color: $button-text;
+  background: $button-background;
+  border: 0.1em solid $button-border;
+  user-select: none;
+
+  &:hover, &.pseudo-hover {
+    cursor: pointer;
+    color: $button-text-hover;
+    background: $button-background-hover;
+    border: 0.1em solid $button-border-hover;
+  }
+
+  // Clear button
+  &#clear {
+    color: $clear-button-text;
+    background: $clear-button-background;
+    &:hover, &.pseudo-hover {
+      color: $clear-button-text-hover;
+      background: $clear-button-background-hover;
+    }
+  }
+}
+
+/* Animations */
+@mixin animation ($color, $scale) {
+  transform: scale($scale);
+  background: $color;
+}
+
+@keyframes blockedAnimation {
+  0%    { @include animation($blocked-series-1, 0.75) }
+  50%   { @include animation($blocked-series-2, 1.25); }
+  100%  { @include animation($blocked-series-3, 1) }
+}
+
+@keyframes visitedAnimation {
+  0%    { @include animation($visited-series-1, 0.75) }
+  25%   { @include animation($visited-series-2, 0.85) }
+  50%   { @include animation($visited-series-3, 1) }
+  75%   { @include animation($visited-series-4, 1.15) }
+  100%  { @include animation($visited-series-5, 1.35) }
+}
+
+@keyframes pathAnimation {
+  0%    { @include animation($path-series-1, 0.75) }
+  25%   { @include animation($path-series-2, 0.85) }
+  50%   { @include animation($path-series-3, 1) }
+  75%   { @include animation($path-series-4, 1.15) }
+  100%  { @include animation($path-series-5, 1.35) }
+}
