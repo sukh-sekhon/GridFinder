@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./common/css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+  <title>GridFinder</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header>
+        GridFinder
+      </header>
+
+      <main>
+          <div class="border-wrap">
+            <div class="border-content">
+              <table id="grid-table"></table>
+            </div>
+          </div>
+      </main>
+
+      <aside>
+        <div id="aside-controls">
+          <div class="border-wrap">
+            <div class="border-content">
+              <h3>Generate Maze</h3>
+              <div id="generate-buttons">
+                <a class="button" id="recursive"> Recursive Division</a>
+                <a class="button" id="lines">     Lines</a>
+                <a class="button" id="radial">    Radial</a>
+                <a class="button" id="random">    Random</a>
+              </div>
+          
+              <h3>Find Path</h3>
+              <div id="find-buttons">
+                <a class="button" id="best">    Best-First</a>
+                <a class="button" id="astar">   A-Star</a>
+                <a class="button" id="bfs">     Breadth-First</a>
+                <a class="button" id="dfs">     Depth-First</a>
+              </div>
+          
+              <h3>Speed</h3>
+              <input type="range" class="form-range" min="0" max="40" value="35" id="speed-slider">
+              
+              <a class="button" id="clear">
+                <i class="fas fa-trash"></i>
+                <span>Clear Grid</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="aside-statistics">
+          <div class="border-wrap">
+            <div class="border-content">
+              <h3>Statistics</h3>
+              <table id="statistics-table">
+                <tr id="row-visited">
+                  <td>Nodes Visited</td>
+                  <td id="visited-count">0</td>
+                </tr>
+                <tr id="row-path">
+                  <td>Nodes in Path</td>
+                  <td id="path-count">0</td>
+                </tr>
+                <tr id="row-time">
+                  <td>Run Time (μs)</td>
+                  <td id="running-time">0</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+      </aside>
+
+    </div>
+
+  </div>
+
+  <script type="module" src="common/js/main.js"></script>
+  <script src="https://kit.fontawesome.com/1bcfef85a4.js" crossorigin="anonymous"></script>
+</body>
+</html>
