@@ -1,46 +1,54 @@
-/* Main Color Theme */
-$mint-cream:    #EEF4EDFF;
-$cadet-grey:    #8DA9C4FF;
-$indigo-dye:    #134074FF;
-$prussian-blue: #13315CFF;
-$oxford-blue:   #0B2545FF;
+/* Color Theme */
+$true-blue:             #0466C8FF;
+$prussian-blue:         #13315CFF;
+$oxford-blue-1:         #002855FF;
+$oxford-blue-2:         #001233FF;
+$roman-silver:          #7D8597FF;
+$platinum:              #e5e4e2ff;
 
-$red:           red;
-$green:         green;
-$white:         #FFFFFFFF;
-$black:         #000000FF;
-$gray:          #AFAFAFFF;
+$black:                 #000000FF;
+$white:                 #FFFFFFFF;
+
+// $usafa-blue:            #0353A4FF;
+// $dark-cornflower-blue:  #023E7DFF;
+// $oxford-blue-2:         #001845FF;
+// $independence:          #33415CFF;
+// $black-coral:           #5C677DFF;
+// $manatee:               #979DACFF;
+
+// $indigo-dye:            #134074FF;
+
+
+
+$red:                   red;
+$green:                 green;
+
 
 /* Colors */
 // Text
 $text-dark:                     $prussian-blue;
-$text-light-1:                  $white;
-$text-light-2:                  $mint-cream;
-$header:                        $oxford-blue;
-
+$text-light:                    $white;
+$header:                        $oxford-blue-1;
 // Background, Border, Shadow
-$background:                    $mint-cream;
-$border-content:                $oxford-blue;
-$box-shadow:                    $gray;
-$border-start:                  $black;
-$border-end:                    $prussian-blue;
+$background:                    $platinum;
+$border-content:                $oxford-blue-1;
+$border-top:                    $oxford-blue-2;
+$border-bottom:                 $oxford-blue-1;
+$box-shadow:                    $roman-silver;
 
-// Buttons
+/* Buttons */
+// Normal State
 $button-text:                   $text-dark;
 $button-background:             $white;
-$button-border:                 $oxford-blue;
+$button-border:                 $oxford-blue-1;
+// Hover State
+$button-text-hover:             $white;
+$button-background-hover:       $true-blue;
+$button-border-hover:           $oxford-blue-1;
 
-$button-text-hover:             $mint-cream;
-$button-background-hover:       $cadet-grey;
-$button-border-hover:           $oxford-blue;
-
-$clear-button-text:             $red;
-$clear-button-background:       $white;
-$clear-button-text-hover:       $mint-cream;
-$clear-button-background-hover: $cadet-grey;
-
-// Table
-$grid-lines:                    $oxford-blue;
+/* Table */
+// Main Table
+$grid-lines:                    $oxford-blue-1;
 $grid-background:               $white;
 
 // Nodes: Start/End/Moving
@@ -49,7 +57,7 @@ $start-node-icon:               $white;
 $end-node-background:           $red;
 $end-node-icon:                 $white;
 $moving-node-background:        $text-dark;
-$moving-node-icon:              $text-light-2;
+$moving-node-icon:              $text-light;
 
 // Nodes: Blocked/Visited/Path
 $blocked-series-1: #283747;
@@ -78,10 +86,8 @@ $aside-width: 10.5em;
 
 /* Fonts & Text */
 $font-stack-body: normal normal normal 1em 'Roboto', sans-serif;
-$font-stack-header: normal small-caps normal 3.5em 'Montserrat', sans-serif;
-h3 {
-  font-weight: 500;
-}
+$font-stack-header: normal small-caps 900 3.5em 'Montserrat', sans-serif;
+h3 {  font-weight: 500; }
 
 /*
 TODO:
@@ -143,14 +149,14 @@ body {
   padding: (1em / 4);
   position: relative;
   border-collapse: collapse;
-  background: linear-gradient(180deg, $border-start, $border-end);
+  background: linear-gradient(180deg, $border-top, $border-bottom);
   box-shadow: 0.2em 0.2em 0.1em $box-shadow;
 
   .border-content {
     padding: 0.2em;
     background: $border-content;
     text-align: center;
-    color: $text-light-1;
+    color: $text-light;
 
     > * {
       width: 100%;
@@ -196,10 +202,10 @@ aside {
   tr {
     font-size: 1em;
 
-    &#row-visited {
+    &#row-visited > td:nth-child(2) {
       color: $visited;
     }
-    &#row-path {
+    &#row-path > td:nth-child(2) {
       color: $path;
     }
 
@@ -271,18 +277,21 @@ aside {
 }
 
 
-/* Table Icons */
-.fa-dot-circle,
-.fa-arrow-right {
-  // border: none;
-  display: table-cell !important;
+/* Icons */
+.fa {
+  &-dot-circle, 
+  &-arrow-right {
+    display: table-cell !important;
+  }
+  &-dot-circle:before, 
+  &-arrow-right:before {
+    font-size: 1.25em;
+    line-height: 1.2;
+  }
+  &-trash:before {
+    margin: 0.2em;
+  }
 }
-.fa-dot-circle:before,
-.fa-arrow-right:before {
-  font-size: 1.25em;
-  line-height: 1.2;
-}
-
 
 /* Buttons */
 .button {
@@ -291,27 +300,22 @@ aside {
   width: 100%;
   padding: 0.5em 0.25em;
   margin: 0 0 0.3em 0;
+  vertical-align: middle;
   border-radius: 0.15em;
   color: $button-text;
   background: $button-background;
   border: 0.1em solid $button-border;
   user-select: none;
 
+  > * {
+    vertical-align: middle;
+  }
+
   &:hover, &.pseudo-hover {
     cursor: pointer;
     color: $button-text-hover;
     background: $button-background-hover;
     border: 0.1em solid $button-border-hover;
-  }
-
-  // Clear button
-  &#clear {
-    color: $clear-button-text;
-    background: $clear-button-background;
-    &:hover, &.pseudo-hover {
-      color: $clear-button-text-hover;
-      background: $clear-button-background-hover;
-    }
   }
 }
 

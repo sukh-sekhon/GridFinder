@@ -1,5 +1,7 @@
-/* Main Color Theme */
+/* Color Theme */
 /* Colors */
+/* Buttons */
+/* Table */
 /* Sizes */
 /* Fonts & Text */
 h3 {
@@ -24,7 +26,7 @@ TODO:
 
 /* Main Wrapper */
 body {
-  background: #EEF4EDFF;
+  background: #e5e4e2ff;
   height: 100vh;
   overflow: hidden;
   font: normal normal normal 1em "Roboto", sans-serif;
@@ -54,9 +56,9 @@ body .wrapper .content header {
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
   margin-top: 0.25em;
-  color: #0B2545FF;
+  color: #002855FF;
   text-align: center;
-  font: normal small-caps normal 3.5em "Montserrat", sans-serif;
+  font: normal small-caps 900 3.5em "Montserrat", sans-serif;
 }
 
 body .wrapper .content main {
@@ -78,15 +80,15 @@ body .wrapper .content aside {
   padding: 0.25em;
   position: relative;
   border-collapse: collapse;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000000FF), to(#13315CFF));
-  background: linear-gradient(180deg, #000000FF, #13315CFF);
-  -webkit-box-shadow: 0.2em 0.2em 0.1em #AFAFAFFF;
-          box-shadow: 0.2em 0.2em 0.1em #AFAFAFFF;
+  background: -webkit-gradient(linear, left top, left bottom, from(#001233FF), to(#002855FF));
+  background: linear-gradient(180deg, #001233FF, #002855FF);
+  -webkit-box-shadow: 0.2em 0.2em 0.1em #7D8597FF;
+          box-shadow: 0.2em 0.2em 0.1em #7D8597FF;
 }
 
 .border-wrap .border-content {
   padding: 0.2em;
-  background: #0B2545FF;
+  background: #002855FF;
   text-align: center;
   color: #FFFFFFFF;
 }
@@ -137,11 +139,11 @@ aside #aside-statistics {
   font-size: 1em;
 }
 
-#aside-statistics tr#row-visited {
+#aside-statistics tr#row-visited > td:nth-child(2) {
   color: #EC57FA;
 }
 
-#aside-statistics tr#row-path {
+#aside-statistics tr#row-path > td:nth-child(2) {
   color: #50D48F;
 }
 
@@ -165,7 +167,7 @@ aside #aside-statistics {
 
 #grid-table td {
   background: #FFFFFFFF;
-  border: 1px solid #0B2545FF;
+  border: 1px solid #002855FF;
   text-align: center;
   width: 25px;
   height: 25px;
@@ -185,7 +187,7 @@ aside #aside-statistics {
 
 #grid-table td.moving {
   background: #13315CFF;
-  color: #EEF4EDFF;
+  color: #FFFFFFFF;
 }
 
 #grid-table td.blocked {
@@ -216,16 +218,18 @@ aside #aside-statistics {
   cursor: pointer;
 }
 
-/* Table Icons */
-.fa-dot-circle,
-.fa-arrow-right {
+/* Icons */
+.fa-dot-circle, .fa-arrow-right {
   display: table-cell !important;
 }
 
-.fa-dot-circle:before,
-.fa-arrow-right:before {
+.fa-dot-circle:before, .fa-arrow-right:before {
   font-size: 1.25em;
   line-height: 1.2;
+}
+
+.fa-trash:before {
+  margin: 0.2em;
 }
 
 /* Buttons */
@@ -235,31 +239,26 @@ aside #aside-statistics {
   width: 100%;
   padding: 0.5em 0.25em;
   margin: 0 0 0.3em 0;
+  vertical-align: middle;
   border-radius: 0.15em;
   color: #13315CFF;
   background: #FFFFFFFF;
-  border: 0.1em solid #0B2545FF;
+  border: 0.1em solid #002855FF;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
 
+.button > * {
+  vertical-align: middle;
+}
+
 .button:hover, .button.pseudo-hover {
   cursor: pointer;
-  color: #EEF4EDFF;
-  background: #8DA9C4FF;
-  border: 0.1em solid #0B2545FF;
-}
-
-.button#clear {
-  color: red;
-  background: #FFFFFFFF;
-}
-
-.button#clear:hover, .button#clear.pseudo-hover {
-  color: #EEF4EDFF;
-  background: #8DA9C4FF;
+  color: #FFFFFFFF;
+  background: #0466C8FF;
+  border: 0.1em solid #002855FF;
 }
 
 /* Animations */
