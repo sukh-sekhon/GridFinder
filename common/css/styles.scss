@@ -4,24 +4,12 @@ $prussian-blue:         #13315CFF;
 $oxford-blue-1:         #002855FF;
 $oxford-blue-2:         #001233FF;
 $roman-silver:          #7D8597FF;
-$platinum:              #e5e4e2ff;
+$platinum:              #E5E4E2FF;
+$red-apple:             #9D1309FF;
+$dartmouth-green:       #00693EFF;
 
 $black:                 #000000FF;
 $white:                 #FFFFFFFF;
-
-// $usafa-blue:            #0353A4FF;
-// $dark-cornflower-blue:  #023E7DFF;
-// $oxford-blue-2:         #001845FF;
-// $independence:          #33415CFF;
-// $black-coral:           #5C677DFF;
-// $manatee:               #979DACFF;
-
-// $indigo-dye:            #134074FF;
-
-
-
-$red:                   red;
-$green:                 green;
 
 
 /* Colors */
@@ -36,6 +24,7 @@ $border-top:                    $oxford-blue-2;
 $border-bottom:                 $oxford-blue-1;
 $box-shadow:                    $roman-silver;
 
+
 /* Buttons */
 // Normal State
 $button-text:                   $text-dark;
@@ -46,64 +35,61 @@ $button-text-hover:             $white;
 $button-background-hover:       $true-blue;
 $button-border-hover:           $oxford-blue-1;
 
-/* Table */
-// Main Table
-$grid-lines:                    $oxford-blue-1;
+
+/* Grid Nodes */
+// Blocked/Visited/Path
+$blocked-series-1:  #283747;
+$blocked-series-2:  #1f3042;
+$blocked-series-3:  #15283c;
+$blocked-series-4:  #0a2137;
+$blocked-series-5:  #001a32;
+$blocked:             $blocked-series-5;
+
+$visited-series-1:  #F680AF;
+$visited-series-2:  #D46EC9;
+$visited-series-3:  #D687EB;
+$visited-series-4:  #A26ED4;
+$visited-series-5:  #baa5ff;
+$visited:             $visited-series-5;
+
+$path-series-1:     #91E0FFFF;
+$path-series-2:     #84E7E8FF;
+$path-series-3:     #9FFFE6FF;
+$path-series-4:     #84E8B1FF;
+$path-series-5:     #91FFA4FF;
+$path:                $path-series-5;
+
+// Start/End/Moving
+$start-node-background:         $dartmouth-green;
+$start-node-icon:               $white;
+$end-node-background:           $red-apple;
+$end-node-icon:                 $white;
+$moving-node-background:        $true-blue;
+$moving-node-icon:              $white;
+$icon-in-path:                  $blocked;
+
+
+/* Grid */
+$grid-lines:                    $blocked;
 $grid-background:               $white;
 
-// Nodes: Start/End/Moving
-$start-node-background:         $green;
-$start-node-icon:               $white;
-$end-node-background:           $red;
-$end-node-icon:                 $white;
-$moving-node-background:        $text-dark;
-$moving-node-icon:              $text-light;
-
-// Nodes: Blocked/Visited/Path
-$blocked-series-1: #283747;
-$blocked-series-2: #1f3042;
-$blocked-series-3: #15283c;
-$blocked-series-4: #0a2137;
-$blocked-series-5: #001a32;
-$blocked:          $blocked-series-5;
-
-$visited-series-1: #FA8057;
-$visited-series-2: #D95A4C;
-$visited-series-3: #F05F74;
-$visited-series-4: #D94CA8;
-$visited-series-5: #EC57FA;
-$visited:          $visited-series-5;
-
-$path-series-1: #5CABFF;
-$path-series-2: #29B1E3;
-$path-series-3: #39F7FA;
-$path-series-4: #29E3B4;
-$path-series-5: #50D48F;
-$path:            $path-series-5;
 
 /* Sizes */
 $aside-width: 10.5em;
 
+
 /* Fonts & Text */
 $font-stack-body: normal normal normal 1em 'Roboto', sans-serif;
 $font-stack-header: normal small-caps 900 3.5em 'Montserrat', sans-serif;
-h3 {  font-weight: 500; }
+h3 {  
+  font-weight: 500; 
+}
 
-/*
-TODO:
-  Choose color theme
-  Accordian:
-    https://codepen.io/raubaca/details/PZzpVe
-    Show algorithm details
-  Delete Button:
-    https://codepen.io/chrisdothtml/pen/xbmddV
-  Title font:
-    https://codepen.io/ClaireLarsen/pen/XmVyVX
-*/
 
 * {
   box-sizing: border-box; 
 }
+
 
 /* Main Wrapper */
 body {
@@ -266,6 +252,7 @@ aside {
     
     &.path {
       background: $path;
+      color: $icon-in-path;
       animation-duration: 1s;
       animation-name: pathAnimation;
     }
@@ -293,6 +280,7 @@ aside {
   }
 }
 
+
 /* Buttons */
 .button {
   display: inline-block;
@@ -318,6 +306,7 @@ aside {
     border: 0.1em solid $button-border-hover;
   }
 }
+
 
 /* Animations */
 @mixin animation ($color, $scale) {

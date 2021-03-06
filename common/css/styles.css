@@ -1,24 +1,14 @@
 /* Color Theme */
 /* Colors */
 /* Buttons */
-/* Table */
+/* Grid Nodes */
+/* Grid */
 /* Sizes */
 /* Fonts & Text */
 h3 {
   font-weight: 500;
 }
 
-/*
-TODO:
-  Choose color theme
-  Accordian:
-    https://codepen.io/raubaca/details/PZzpVe
-    Show algorithm details
-  Delete Button:
-    https://codepen.io/chrisdothtml/pen/xbmddV
-  Title font:
-    https://codepen.io/ClaireLarsen/pen/XmVyVX
-*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -26,7 +16,7 @@ TODO:
 
 /* Main Wrapper */
 body {
-  background: #e5e4e2ff;
+  background: #E5E4E2FF;
   height: 100vh;
   overflow: hidden;
   font: normal normal normal 1em "Roboto", sans-serif;
@@ -140,11 +130,11 @@ aside #aside-statistics {
 }
 
 #aside-statistics tr#row-visited > td:nth-child(2) {
-  color: #EC57FA;
+  color: #baa5ff;
 }
 
 #aside-statistics tr#row-path > td:nth-child(2) {
-  color: #50D48F;
+  color: #91FFA4FF;
 }
 
 #aside-statistics tr td:nth-child(1) {
@@ -167,7 +157,7 @@ aside #aside-statistics {
 
 #grid-table td {
   background: #FFFFFFFF;
-  border: 1px solid #002855FF;
+  border: 1px solid #001a32;
   text-align: center;
   width: 25px;
   height: 25px;
@@ -176,17 +166,17 @@ aside #aside-statistics {
 }
 
 #grid-table td.start-node {
-  background: green;
+  background: #00693EFF;
   color: #FFFFFFFF;
 }
 
 #grid-table td.end-node {
-  background: red;
+  background: #9D1309FF;
   color: #FFFFFFFF;
 }
 
 #grid-table td.moving {
-  background: #13315CFF;
+  background: #0466C8FF;
   color: #FFFFFFFF;
 }
 
@@ -199,7 +189,7 @@ aside #aside-statistics {
 }
 
 #grid-table td.visited {
-  background: #EC57FA;
+  background: #baa5ff;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-name: visitedAnimation;
@@ -207,7 +197,8 @@ aside #aside-statistics {
 }
 
 #grid-table td.path {
-  background: #50D48F;
+  background: #91FFA4FF;
+  color: #001a32;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-name: pathAnimation;
@@ -301,27 +292,27 @@ aside #aside-statistics {
   0% {
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
-    background: #FA8057;
+    background: #F680AF;
   }
   25% {
     -webkit-transform: scale(0.85);
             transform: scale(0.85);
-    background: #D95A4C;
+    background: #D46EC9;
   }
   50% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    background: #F05F74;
+    background: #D687EB;
   }
   75% {
     -webkit-transform: scale(1.15);
             transform: scale(1.15);
-    background: #D94CA8;
+    background: #A26ED4;
   }
   100% {
     -webkit-transform: scale(1.35);
             transform: scale(1.35);
-    background: #EC57FA;
+    background: #baa5ff;
   }
 }
 
@@ -329,27 +320,27 @@ aside #aside-statistics {
   0% {
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
-    background: #FA8057;
+    background: #F680AF;
   }
   25% {
     -webkit-transform: scale(0.85);
             transform: scale(0.85);
-    background: #D95A4C;
+    background: #D46EC9;
   }
   50% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    background: #F05F74;
+    background: #D687EB;
   }
   75% {
     -webkit-transform: scale(1.15);
             transform: scale(1.15);
-    background: #D94CA8;
+    background: #A26ED4;
   }
   100% {
     -webkit-transform: scale(1.35);
             transform: scale(1.35);
-    background: #EC57FA;
+    background: #baa5ff;
   }
 }
 
@@ -357,27 +348,27 @@ aside #aside-statistics {
   0% {
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
-    background: #5CABFF;
+    background: #91E0FFFF;
   }
   25% {
     -webkit-transform: scale(0.85);
             transform: scale(0.85);
-    background: #29B1E3;
+    background: #84E7E8FF;
   }
   50% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    background: #39F7FA;
+    background: #9FFFE6FF;
   }
   75% {
     -webkit-transform: scale(1.15);
             transform: scale(1.15);
-    background: #29E3B4;
+    background: #84E8B1FF;
   }
   100% {
     -webkit-transform: scale(1.35);
             transform: scale(1.35);
-    background: #50D48F;
+    background: #91FFA4FF;
   }
 }
 
@@ -385,27 +376,27 @@ aside #aside-statistics {
   0% {
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
-    background: #5CABFF;
+    background: #91E0FFFF;
   }
   25% {
     -webkit-transform: scale(0.85);
             transform: scale(0.85);
-    background: #29B1E3;
+    background: #84E7E8FF;
   }
   50% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    background: #39F7FA;
+    background: #9FFFE6FF;
   }
   75% {
     -webkit-transform: scale(1.15);
             transform: scale(1.15);
-    background: #29E3B4;
+    background: #84E8B1FF;
   }
   100% {
     -webkit-transform: scale(1.35);
             transform: scale(1.35);
-    background: #50D48F;
+    background: #91FFA4FF;
   }
 }
 /*# sourceMappingURL=styles.css.map */
