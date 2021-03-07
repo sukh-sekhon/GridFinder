@@ -11,7 +11,7 @@
     * Move a start or end node via click
     * Block nodes via a click or click-and-drag
     * Clear the grid using the Clear Grid button (or <kbd>backspace</kbd> )
-    * Adjust animation speed with the slider (or <kbd>↑</kbd><kbd>↓<kbd><kbd>→</kbd><kbd>←</kbd>)
+    * Adjust animation speed with the slider (or <kbd>↑<kbd><kbd>↓<kbd><kbd>→</kbd><kbd>←</kbd>)
 * __Maze Generation Algorithms__
   * <kbd>1</kbd> Recursive Division
   * <kbd>2</kbd> Lines
@@ -23,4 +23,4 @@
   * <kbd>E</kbd> Breadth-First Search
   * <kbd>R</kbd> Depth-First Search
 * __Statistics__
-  * See the count of nodes visited, nodes in path, and estimated run-time based on the selected pathfinding algorithm
+  * Displays estimated runtime and count of nodes visited and path based on the selected pathfinding algorithm
