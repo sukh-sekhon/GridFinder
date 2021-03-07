@@ -6,19 +6,20 @@
 ### See it in action [here](https://sukhjot-sekhon.github.io/GridFinder)
 
 
-## Features
-* __Grid__
+## Usage
+* __Basics__
     * Move a start or end node via click
     * Block nodes via a click or click-and-drag
+    * Clear the grid using the Clear Grid button (or [<kbd>backspace</kbd>] )
 * __Maze Generation Algorithms__
-  * Recursive Division (<kbd>1</kbd>)
-  * Lines
-  * Radial 
-  * Random
+  * [<kbd>1</kbd>] Recursive Division
+  * [<kbd>1</kbd>] Lines
+  * [<kbd>1</kbd>] Radial
+  * [<kbd>1</kbd>] Random
 * __Pathfinding Algorithms__
-  * Best-First Search
-  * A-Star
-  * Breadth-First Search
-  * Depth-First Search
+  * [<kbd>Q</kbd>] Best-First Search
+  * [<kbd>W</kbd>] A-Star
+  * [<kbd>E</kbd>] Breadth-First Search
+  * [<kbd>R</kbd>] Depth-First Search
 * __Statistics__
   * See the number of nodes visited, nodes in path, and an estimated run-time based on the pathfinding algorithm selected
