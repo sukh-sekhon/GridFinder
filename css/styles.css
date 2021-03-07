@@ -166,12 +166,12 @@ aside #aside-statistics {
 }
 
 #grid-table td.start-node {
-  background: #00693EFF;
+  background: #008000FF;
   color: #FFFFFFFF;
 }
 
 #grid-table td.end-node {
-  background: #9D1309FF;
+  background: #FF0000FF;
   color: #FFFFFFFF;
 }
 
