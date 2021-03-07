@@ -11,7 +11,7 @@
     * Move a start or end node via click
     * Block nodes via a click or click-and-drag
     * Clear the grid using the Clear Grid button (or <kbd>backspace</kbd> )
-    * Adjust animation speed with the slider (or <kbd>↑<kbd><kbd>↓<kbd><kbd>→</kbd><kbd>←</kbd>)
+    * Adjust animation speed with the slider (or <kbd>↑</kbd><kbd>↓</kbd><kbd>→</kbd><kbd>←</kbd>)
 * __Maze Generation Algorithms__
   * <kbd>1</kbd> Recursive Division
   * <kbd>2</kbd> Lines
