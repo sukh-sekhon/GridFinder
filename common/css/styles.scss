@@ -5,8 +5,8 @@ $oxford-blue-1:         #002855FF;
 $oxford-blue-2:         #001233FF;
 $roman-silver:          #7D8597FF;
 $platinum:              #E5E4E2FF;
-$red-apple:             #9D1309FF;
-$dartmouth-green:       #00693EFF;
+$red:                   #FF0000FF;
+$green:                 #008000FF;
 
 $black:                 #000000FF;
 $white:                 #FFFFFFFF;
@@ -60,9 +60,9 @@ $path-series-5:     #91FFA4FF;
 $path:                $path-series-5;
 
 // Start/End/Moving
-$start-node-background:         $dartmouth-green;
+$start-node-background:         $green;
 $start-node-icon:               $white;
-$end-node-background:           $red-apple;
+$end-node-background:           $red;
 $end-node-icon:                 $white;
 $moving-node-background:        $true-blue;
 $moving-node-icon:              $white;
