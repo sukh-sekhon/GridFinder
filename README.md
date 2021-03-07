@@ -1,4 +1,4 @@
 # GridFinder
 
 ## Demo
-### See a [live demo here](https://sukhjot-sekhon.github.io/GridFinder/)
+### See it in action [here](https://sukhjot-sekhon.github.io/GridFinder/)
