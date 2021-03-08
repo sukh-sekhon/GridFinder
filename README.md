@@ -1,5 +1,5 @@
 # GridFinder
-[![forthebadge](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](./common/js/main.js) [![forthebadge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](./common/css/styles.scss) [![forthebadge](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)](./common/index.html)
+[![forthebadge](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](./common/js/main.js) [![forthebadge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](./common/index.html) [![forthebadge](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)](./common/css/styles.scss)
 
 ## [🚀Launch Demo🚀](https://sukhjot-sekhon.github.io/GridFinder)
 
@@ -8,7 +8,7 @@ __Basics__
 * __Move__ a start or end node via click
 * __Block__ nodes via a click or click-and-drag
 * __Clear__ the grid using the Clear Grid button (<kbd>backspace</kbd>)
-* Adjust __speed__ with the slider (<kbd>↑</kbd> <kbd>→</kbd> <kbd>↓</kbd> <kbd>←</kbd>)
+* Adjust __speed__ with the slider (increment: <kbd>↑</kbd> <kbd>→</kbd>, decrement: <kbd>↓</kbd> <kbd>←</kbd>)
 * The Statistics panel display the estimated runtime, count of nodes visited, and nodes in path
 
 __Maze Generation Algorithms__
