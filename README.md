@@ -7,20 +7,27 @@
 
 
 ## Usage
-* __Basics__
-    * Move a start or end node via click
-    * Block nodes via a click or click-and-drag
-    * Clear the grid using the Clear Grid button (or <kbd>backspace</kbd> )
-    * Adjust animation speed with the slider (or <kbd>↑</kbd><kbd>↓</kbd><kbd>→</kbd><kbd>←</kbd>)
-* __Maze Generation Algorithms__
-  * <kbd>1</kbd> Recursive Division
-  * <kbd>2</kbd> Lines
-  * <kbd>3</kbd> Radial
-  * <kbd>4</kbd> Random
-* __Pathfinding Algorithms__
-  * <kbd>Q</kbd> Best-First Search
-  * <kbd>W</kbd> A-Star
-  * <kbd>E</kbd> Breadth-First Search
-  * <kbd>R</kbd> Depth-First Search
-* __Statistics__
-  * Displays estimated runtime and count of nodes visited and path based on the selected pathfinding algorithm
+__Basics__
+* __Move__ a start or end node via click
+* __Block__ nodes via a click or click-and-drag
+* __Clear__ the grid using the Clear Grid button (<kbd>backspace</kbd>)
+* Adjust __speed__ with the slider (<kbd>↑</kbd> <kbd>→</kbd> <kbd>↓</kbd> <kbd>←</kbd>)
+* The Statistics panel display the estimated runtime, count of nodes visited, and nodes in path
+
+__Maze Generation Algorithms__
+| Algorithm | Shortcut | Description |
+|---|:-:|---|
+| Recursive Division | <kbd>1</kbd>  | Recursively divide the grid with a wall containing a passage. |
+| Lines | <kbd>2</kbd>  | Draw horizontal or vertical walls with a random passage. |
+| Radial | <kbd>3</kbd> | Draw circles with passages with the origin set as the start node. |
+| Random | <kbd>4</kbd> | Block $^1/_3$ of the grid with randomly positioned nodes. |
+
+
+__Search Algorithms__
+__Maze Generation Algorithms__
+| Algorithm | Shortcut | Data Structure |  Time Complexity | Space Complexity | Description |
+|---|:-:|---|---|---|---|
+| Best-First | <kbd>Q</kbd> | Queue | O(row x col) | O(row x col) | Greedy algorithm using Manhattan distance as it's heuristic |
+| A-Star | <kbd>W</kbd> | Priority Queue | O(row x col) | O(row x col) | Greedy algorithm using Manhattan distance as it's heuristic. |
+| Breadth-First | <kbd>E</kbd> | Queue | O(row x col) | O(row x col) | Travserses grid by visiting neighbouring nodes before visiting children. |
+| Depth-First | <kbd>R</kbd> | Stack | O(row x col) | O(row x col) | Traverses grid by visiting all highest-depth nodes before backtracking. |
