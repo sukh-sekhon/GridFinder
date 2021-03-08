@@ -1,10 +1,7 @@
 # GridFinder
-[![forthebadge](https://forthebadge.com/images/badges/made-with-JavaScript.svg)](./common/js/main.js) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](./common/css/styles.scss) [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](./common/index.html)
+[![forthebadge](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](./common/js/main.js) [![forthebadge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](./common/css/styles.scss) [![forthebadge](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)](./common/index.html)
 
-
-## Demo
-### See it in action [here](https://sukhjot-sekhon.github.io/GridFinder)
-
+## [🚀Launch Demo🚀](https://sukhjot-sekhon.github.io/GridFinder)
 
 ## Usage
 __Basics__
@@ -27,7 +24,7 @@ __Search Algorithms__
 __Maze Generation Algorithms__
 | Algorithm | Shortcut | Data Structure |  Time Complexity | Space Complexity | Description |
 |---|:-:|---|---|---|---|
-| Best-First | <kbd>Q</kbd> | Queue | O(row x col) | O(row x col) | Greedy algorithm using Manhattan distance as it's heuristic |
-| A-Star | <kbd>W</kbd> | Priority Queue | O(row x col) | O(row x col) | Greedy algorithm using Manhattan distance as it's heuristic. |
-| Breadth-First | <kbd>E</kbd> | Queue | O(row x col) | O(row x col) | Travserses grid by visiting neighbouring nodes before visiting children. |
-| Depth-First | <kbd>R</kbd> | Stack | O(row x col) | O(row x col) | Traverses grid by visiting all highest-depth nodes before backtracking. |
+| Best-First | <kbd>Q</kbd> | Queue | O(row×col) | O(row×col) | Greedy algorithm using Manhattan distance as it's heuristic |
+| A-Star | <kbd>W</kbd> | Priority Queue | O(row×col) | O(row×col) | Greedy algorithm using Manhattan distance as it's heuristic. |
+| Breadth-First | <kbd>E</kbd> | Queue | O(row×col) | O(row×col) | Travserses grid by visiting neighbouring nodes before visiting children. |
+| Depth-First | <kbd>R</kbd> | Stack | O(row×col) | O(row×col) | Traverses grid by visiting all highest-depth nodes before backtracking. |
