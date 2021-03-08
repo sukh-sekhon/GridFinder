@@ -12,17 +12,17 @@ __Basics__
 * The Statistics panel display the estimated runtime, count of nodes visited, and nodes in path
 
 __Maze Generation Algorithms__
-| Algorithm | Shortcut | Description |
+| Algorithm | Key | Description |
 |---|:-:|---|
 | Recursive Division | <kbd>1</kbd>  | Recursively divide the grid with a wall containing a passage. |
 | Lines | <kbd>2</kbd>  | Draw horizontal or vertical walls with a random passage. |
 | Radial | <kbd>3</kbd> | Draw circles with passages with the origin set as the start node. |
-| Random | <kbd>4</kbd> | Block $^1/_3$ of the grid with randomly positioned nodes. |
+| Random | <kbd>4</kbd> | Block 1/3 of the grid with randomly positioned nodes. |
 
 
 __Search Algorithms__
 __Maze Generation Algorithms__
-| Algorithm | Shortcut | Data Structure |  Time Complexity | Space Complexity | Description |
+| Algorithm | Key | Data Structure |  Time Complexity | Space Complexity | Description |
 |---|:-:|---|---|---|---|
 | Best-First | <kbd>Q</kbd> | Queue | O(row×col) | O(row×col) | Greedy algorithm using Manhattan distance as it's heuristic |
 | A-Star | <kbd>W</kbd> | Priority Queue | O(row×col) | O(row×col) | Greedy algorithm using Manhattan distance as it's heuristic. |
