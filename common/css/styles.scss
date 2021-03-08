@@ -1,15 +1,15 @@
 /* Color Theme */
-$true-blue:                   #0466C8FF;
-$prussian-blue:               #13315CFF;
-$oxford-blue-1:               #002855FF;
-$oxford-blue-2:               #001233FF;
-$roman-silver:                #7D8597FF;
-$platinum:                    #E5E4E2FF;
-$red:                         #FF0000FF;
-$green:                       #008000FF;
+$true-blue:                     #0466C8FF;
+$prussian-blue:                 #13315CFF;
+$oxford-blue-1:                 #002855FF;
+$oxford-blue-2:                 #001233FF;
+$roman-silver:                  #7D8597FF;
+$platinum:                      #E5E4E2FF;
+$red:                           #FF0000FF;
+$green:                         #008000FF;
 
-$black:                       #000000FF;
-$white:                       #FFFFFFFF;
+$black:                         #000000FF;
+$white:                         #FFFFFFFF;
 
 
 /* Colors */
@@ -38,25 +38,25 @@ $button-border-hover:           $oxford-blue-1;
 
 /* Grid Nodes */
 // Blocked/Visited/Path
-$blocked-series-1:            #283747;
-$blocked-series-2:            #1f3042;
-$blocked-series-3:            #15283c;
-$blocked-series-4:            #0a2137;
-$blocked-series-5:            #001a32;
-$blocked:                      $blocked-series-5;
+$blocked-series-1:              #283747;
+$blocked-series-2:              #1f3042;
+$blocked-series-3:              #15283c;
+$blocked-series-4:              #0a2137;
+$blocked-series-5:              #001a32;
+$blocked:                       $blocked-series-5;
 
-$visited-series-1:            #F680AF;
-$visited-series-2:            #D46EC9;
-$visited-series-3:            #D687EB;
-$visited-series-4:            #A26ED4;
-$visited-series-5:            #baa5ff;
+$visited-series-1:              #F680AF;
+$visited-series-2:              #D46EC9;
+$visited-series-3:              #D687EB;
+$visited-series-4:              #A26ED4;
+$visited-series-5:              #baa5ff;
 $visited:                       $visited-series-5;
 
-$path-series-1:               #91E0FFFF;
-$path-series-2:               #84E7E8FF;
-$path-series-3:               #9FFFE6FF;
-$path-series-4:               #84E8B1FF;
-$path-series-5:               #91FFA4FF;
+$path-series-1:                 #91E0FFFF;
+$path-series-2:                 #84E7E8FF;
+$path-series-3:                 #9FFFE6FF;
+$path-series-4:                 #84E8B1FF;
+$path-series-5:                 #91FFA4FF;
 $path:                          $path-series-5;
 
 // Start/End/Moving
