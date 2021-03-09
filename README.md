@@ -19,10 +19,6 @@ __Maze Generation Algorithms__
 | Radial | <kbd>3</kbd> | Draw circles with passages with the origin set as the start node. |
 | Random | <kbd>4</kbd> | Block 1/3 of the grid with randomly positioned nodes. |
 
-Hello
-\
-\
-World
 
 __Pathfinding Algorithms__
 | Algorithm | Key | Data Structure | Description |
