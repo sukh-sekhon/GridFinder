@@ -3,7 +3,7 @@
 
 ## [🚀Launch Demo🚀](https://sukhjot-sekhon.github.io/GridFinder)
 
-## Usage
+## Features
 __Basics__
 * __Move__ a start or end node via click
 * __Block__ nodes via a click or click-and-drag
