@@ -10,6 +10,7 @@ __Basics__
 * __Clear__ the grid using the Clear Grid button (<kbd>backspace</kbd>)
 * Adjust __speed__ with the slider (increment: <kbd>↑</kbd> <kbd>→</kbd>, decrement: <kbd>↓</kbd> <kbd>←</kbd>)
 
+
 __Maze Generation Algorithms__
 | Algorithm | Key | Description |
 |---|:-:|---|
@@ -17,8 +18,8 @@ __Maze Generation Algorithms__
 | Lines | <kbd>2</kbd>  | Draw horizontal or vertical walls with a random passage. |
 | Radial | <kbd>3</kbd> | Draw circles with passages with the origin set as the start node. |
 | Random | <kbd>4</kbd> | Block 1/3 of the grid with randomly positioned nodes. |
-  
-  
+\
+
 __Pathfinding Algorithms__
 | Algorithm | Key | Data Structure | Description |
 |---|:-:|:-:|---|
