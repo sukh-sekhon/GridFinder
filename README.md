@@ -9,7 +9,6 @@ __Basics__
 * __Block__ nodes via a click or click-and-drag
 * __Clear__ the grid using the Clear Grid button (<kbd>backspace</kbd>)
 * Adjust __speed__ with the slider (increment: <kbd>↑</kbd> <kbd>→</kbd>, decrement: <kbd>↓</kbd> <kbd>←</kbd>)
-* The Statistics panel display the estimated runtime, count of nodes visited, and nodes in path
 
 __Maze Generation Algorithms__
 | Algorithm | Key | Description |
@@ -22,9 +21,9 @@ __Maze Generation Algorithms__
 
 __Search Algorithms__
 __Maze Generation Algorithms__
-| Algorithm | Key | Data Structure |  Time Complexity | Space Complexity | Description |
-|---|:-:|---|---|---|---|
-| Best-First | <kbd>Q</kbd> | Queue | O(row×col) | O(row×col) | Greedy algorithm using Manhattan distance as it's heuristic |
-| A-Star | <kbd>W</kbd> | Priority Queue | O(row×col) | O(row×col) | Greedy algorithm using Manhattan distance as it's heuristic. |
-| Breadth-First | <kbd>E</kbd> | Queue | O(row×col) | O(row×col) | Travserses grid by visiting neighbouring nodes before visiting children. |
-| Depth-First | <kbd>R</kbd> | Stack | O(row×col) | O(row×col) | Traverses grid by visiting all highest-depth nodes before backtracking. |
+| Algorithm | Key | Data Structure | Description |
+|---|:-:|---|---|
+| Best-First | <kbd>Q</kbd> | Queue | Greedy algorithm using Manhattan distance as it's heuristic |
+| A-Star | <kbd>W</kbd> | Priority Queue | Greedy algorithm using Manhattan distance as it's heuristic. |
+| Breadth-First | <kbd>E</kbd> | Queue | Travserses grid by visiting neighbouring nodes before visiting children. |
+| Depth-First | <kbd>R</kbd> | Stack | Traverses grid by visiting all highest-depth nodes before backtracking. |
