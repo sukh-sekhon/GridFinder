@@ -1,5 +1,5 @@
 # GridFinder
-[![forthebadge](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](./common/js/main.js) [![forthebadge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](./common/index.html) [![forthebadge](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)](./common/css/styles.scss)
+[![forthebadge](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](./common/js/) [![forthebadge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](./common/index.html) [![forthebadge](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)](./common/css/styles.scss)
 
 ## [🚀Launch Demo🚀](https://sukhjot-sekhon.github.io/GridFinder)
 
@@ -26,7 +26,7 @@ World
 
 __Pathfinding Algorithms__
 | Algorithm | Key | Data Structure | Description |
-|---|:-:|:-:|---|
+|---|:-:|---|---|
 | Best-First | <kbd>Q</kbd> | Queue | Greedy algorithm using Manhattan distance as it's heuristic |
 | A-Star | <kbd>W</kbd> | Priority Queue | Greedy algorithm using Manhattan distance as it's heuristic. |
 | Breadth-First | <kbd>E</kbd> | Queue | Travserses grid by visiting neighbouring nodes before visiting children. |
