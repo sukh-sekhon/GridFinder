@@ -1,7 +1,7 @@
 # GridFinder
 [![forthebadge](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](./common/js/) [![forthebadge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](./common/index.html) [![forthebadge](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)](./common/css/styles.scss)
 
-## [🚀Launch Demo🚀](https://sukhjot-sekhon.github.io/GridFinder)
+## [Launch Demo](https://sukhjot-sekhon.github.io/GridFinder)
 
 <p align="center"><a href="https://sukhjot-sekhon.github.io/GridFinder">
   <img src="https://github.com/sukhjot-sekhon/Public/blob/master/resources/gridfinder_demo.gif" alt="GridFinder Demo" width="600"/>
