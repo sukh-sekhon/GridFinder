@@ -3,9 +3,9 @@
 
 ## [🚀Launch Demo🚀](https://sukhjot-sekhon.github.io/GridFinder)
 
-<a href="https://sukhjot-sekhon.github.io/GridFinder">
+<p align="center"><a href="https://sukhjot-sekhon.github.io/GridFinder">
   <img src="https://github.com/sukhjot-sekhon/Public/blob/master/resources/gridfinder_demo.gif" alt="GridFinder Demo" width="600"/>
-</a>
+</a></p>
 
 ## Features
 __Basics__
