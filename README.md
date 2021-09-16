@@ -4,7 +4,7 @@
 ## [Launch Demo](https://sukh-sekhon.github.io/GridFinder)
 
 <p align="center"><a href="https://sukhjot-sekhon.github.io/GridFinder">
-  <img src="https://github.com/sukhjot-sekhon/Public/blob/master/resources/gridfinder_demo.gif" alt="GridFinder Demo" width="600"/>
+  <img src="https://github.com/sukh-sekhon/Public/blob/master/resources/gridfinder_demo.gif" alt="GridFinder Demo" width="600"/>
 </a></p>
 
 ## Features
