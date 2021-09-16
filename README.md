@@ -27,7 +27,7 @@ __Maze Generation Algorithms__
 __Pathfinding Algorithms__
 | Algorithm | Key | Data Structure | Description |
 |---|:-:|---|---|
-| Best-First | <kbd>Q</kbd> | Queue | Greedy algorithm using Manhattan distance as it's heuristic |
+| Best-First | <kbd>Q</kbd> | Queue | Greedy algorithm using Manhattan distance as it's heuristic. |
 | A-Star | <kbd>W</kbd> | Priority Queue | Greedy algorithm using Manhattan distance as it's heuristic. |
 | Breadth-First | <kbd>E</kbd> | Queue | Travserses grid by visiting neighbouring nodes before visiting children. |
 | Depth-First | <kbd>R</kbd> | Stack | Traverses grid by visiting all highest-depth nodes before backtracking. |
